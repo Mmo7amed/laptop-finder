@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compare laptops | Student Laptop Finder</title>
+  <link href="./dist/output.css" rel="stylesheet">
+</head>
+<body class="saver">
+  <header class="border-b border-slate-400/20">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4">
+      <a href="index.html" class="text-xl font-extrabold">Student<span class="text-green-600">Laptop</span>Finder</a>
+      <div class="flex items-center gap-2">
+        <button id="themeButton" class="btn-action text-sm">Battery Saver</button>
+        <button id="menuButton" class="btn-action text-sm md:hidden">Menu</button>
+      </div>
+      <nav id="navMenu" class="absolute left-0 right-0 top-20 z-10 hidden flex-col gap-1 border-b border-slate-400/20 p-4 md:static md:flex md:flex-row md:border-0 md:p-0"><a class="nav-link rounded-lg px-3 py-2 font-medium" href="index.html">Home</a><a class="nav-link rounded-lg px-3 py-2 font-medium" href="laptops.html">Laptops</a><a class="nav-link rounded-lg px-3 py-2 font-medium" href="favorites.html">Favorites</a><a class="nav-link rounded-lg px-3 py-2 font-medium" href="compare.html">Compare</a></nav>
+    </div>
+  </header>
+  <main class="mx-auto min-h-[75vh] max-w-7xl px-4 py-10">
+    
+<div id="pageContent"><p class="muted font-semibold">SIDE BY SIDE</p><h1 class="mt-1 text-3xl font-extrabold">Compare your favorites</h1><p class="muted mt-2">The best value in each row is highlighted in green.</p><section id="comparisonArea" class="mt-7"></section></div>
+
+  </main>
+  <footer class="border-t border-slate-400/20 px-4 py-6 text-center text-sm muted">Student Laptop Finder · SW302 Assignment 2</footer>
+  <script type="module" src="./src/js/compare-page.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Student Laptop Finder</title>
+  <link href="./dist/output.css" rel="stylesheet">
+</head>
+<body class="saver">
+  <header class="border-b border-slate-400/20">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4">
+      <a href="index.html" class="text-xl font-extrabold">Student<span class="text-green-600">Laptop</span>Finder</a>
+      <div class="flex items-center gap-2">
+        <button id="themeButton" class="btn-action text-sm">Battery Saver</button>
+        <button id="menuButton" class="btn-action text-sm md:hidden">Menu</button>
+      </div>
+      <nav id="navMenu" class="absolute left-0 right-0 top-20 z-10 hidden flex-col gap-1 border-b border-slate-400/20 p-4 md:static md:flex md:flex-row md:border-0 md:p-0"><a class="nav-link rounded-lg px-3 py-2 font-medium" href="index.html">Home</a><a class="nav-link rounded-lg px-3 py-2 font-medium" href="laptops.html">Laptops</a><a class="nav-link rounded-lg px-3 py-2 font-medium" href="favorites.html">Favorites</a><a class="nav-link rounded-lg px-3 py-2 font-medium" href="compare.html">Compare</a></nav>
+    </div>
+  </header>
+  <main class="mx-auto min-h-[75vh] max-w-7xl px-4 py-10">
+    
+<section class="rounded-3xl bg-gradient-to-r from-green-700 to-emerald-500 p-8 text-white md:p-14">
+  <p class="font-semibold uppercase tracking-widest text-green-100">Find the right laptop for university</p>
+  <h1 class="mt-3 max-w-2xl text-4xl font-extrabold md:text-5xl">Your next laptop, made easier to find.</h1>
+  <p class="mt-4 max-w-2xl text-green-50">Browse student laptops, compare specifications and save your favorites in one simple place.</p>
+  <a href="laptops.html" class="mt-7 inline-flex rounded-xl bg-white px-5 py-3 font-bold text-green-800 transition hover:bg-green-100">Browse laptops</a>
+</section>
+<section id="pageContent" class="mt-10 grid gap-4 sm:grid-cols-3">
+  <div class="panel rounded-2xl border p-6"><p class="muted">Available laptops</p><p id="laptopCount" class="mt-2 text-3xl font-extrabold">...</p></div>
+  <div class="panel rounded-2xl border p-6"><p class="muted">Lowest price</p><p id="lowestPrice" class="mt-2 text-3xl font-extrabold">...</p></div>
+  <div class="panel rounded-2xl border p-6"><p class="muted">Saved favorites</p><p id="savedCount" data-favorite-count class="mt-2 text-3xl font-extrabold">0</p></div>
+</section>
+<section class="mt-12"><h2 class="text-2xl font-bold">Explore the app</h2><div class="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+<a class="laptop-card p-5" href="laptops.html"><h3 class="font-bold">Laptop catalogue →</h3><p class="muted mt-2 text-sm">Search, filter and sort laptops.</p></a>
+<a class="laptop-card p-5" href="favorites.html"><h3 class="font-bold">Favorites →</h3><p class="muted mt-2 text-sm">See your saved laptops.</p></a>
+<a class="laptop-card p-5" href="compare.html"><h3 class="font-bold">Compare →</h3><p class="muted mt-2 text-sm">Compare favorite laptops.</p></a>
+<a class="laptop-card p-5" href="details.html?id=1"><h3 class="font-bold">Laptop details →</h3><p class="muted mt-2 text-sm">See a full specification example.</p></a>
+</div></section>
+
+  </main>
+  <footer class="border-t border-slate-400/20 px-4 py-6 text-center text-sm muted">Student Laptop Finder · SW302 Assignment 2</footer>
+  <script type="module" src="./src/js/home.js"></script>
+</body>
+</html>

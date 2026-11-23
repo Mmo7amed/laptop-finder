@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favorites | Student Laptop Finder</title>
+  <link href="./dist/output.css" rel="stylesheet">
+</head>
+<body class="saver">
+  <header class="border-b border-slate-400/20">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4">
+      <a href="index.html" class="text-xl font-extrabold">Student<span class="text-green-600">Laptop</span>Finder</a>
+      <div class="flex items-center gap-2">
+        <button id="themeButton" class="btn-action text-sm">Battery Saver</button>
+        <button id="menuButton" class="btn-action text-sm md:hidden">Menu</button>
+      </div>
+      <nav id="navMenu" class="absolute left-0 right-0 top-20 z-10 hidden flex-col gap-1 border-b border-slate-400/20 p-4 md:static md:flex md:flex-row md:border-0 md:p-0"><a class="nav-link rounded-lg px-3 py-2 font-medium" href="index.html">Home</a><a class="nav-link rounded-lg px-3 py-2 font-medium" href="laptops.html">Laptops</a><a class="nav-link rounded-lg px-3 py-2 font-medium" href="favorites.html">Favorites</a><a class="nav-link rounded-lg px-3 py-2 font-medium" href="compare.html">Compare</a></nav>
+    </div>
+  </header>
+  <main class="mx-auto min-h-[75vh] max-w-7xl px-4 py-10">
+    
+<div id="pageContent">
+  <div class="flex flex-wrap items-center justify-between gap-4"><div><p class="muted font-semibold">YOUR LIST</p><h1 class="mt-1 text-3xl font-extrabold">Saved favorites</h1></div><button id="clearButton" class="btn-action">Clear all</button></div>
+  <div class="mt-6 grid gap-4 sm:grid-cols-3">
+    <div class="panel rounded-2xl border p-5"><p class="muted">Number saved</p><p id="favoriteNumber" class="mt-2 text-2xl font-bold">0</p></div>
+    <div class="panel rounded-2xl border p-5"><p class="muted">Total price</p><p id="favoriteTotal" class="mt-2 text-2xl font-bold">$0</p></div>
+    <div class="panel rounded-2xl border p-5"><p class="muted">Average price</p><p id="favoriteAverage" class="mt-2 text-2xl font-bold">$0</p></div>
+  </div>
+  <section id="laptopGrid" class="mt-7 grid gap-5 sm:grid-cols-2 lg:grid-cols-3"></section>
+</div>
+
+  </main>
+  <footer class="border-t border-slate-400/20 px-4 py-6 text-center text-sm muted">Student Laptop Finder · SW302 Assignment 2</footer>
+  <script type="module" src="./src/js/favorites.js"></script>
+</body>
+</html>
